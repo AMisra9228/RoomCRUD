@@ -43,7 +43,7 @@ import java.util.Observer
 
 class DataRecordDetail : AppCompatActivity() {
 
-    //declaration
+    //variable declaration
     private lateinit var datarecordViewModel: DataRecordViewModel
     private var recordId: Long = 0L
     private var isEdit: Boolean = false
