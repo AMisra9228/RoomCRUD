@@ -43,7 +43,7 @@ import java.util.Observer
 
 class DataRecordDetail : AppCompatActivity() {
 
-    //variable declaration
+    //variable declaration kotlin
     private lateinit var datarecordViewModel: DataRecordViewModel
     private var recordId: Long = 0L
     private var isEdit: Boolean = false
@@ -112,6 +112,7 @@ class DataRecordDetail : AppCompatActivity() {
             val id = datarecord_id.text.toString().toLong()
             val record = datarecord_record.text.toString()
 
+            //validation
             if (record.isBlank() or record.isEmpty()) {
                 Snackbar.make(view, "Empty data is not allowed", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
